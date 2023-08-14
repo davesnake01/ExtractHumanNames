@@ -14,7 +14,7 @@ def getPerson(text):
     for entity in spacy_parser.ents:
         # print(f'Found: {entity.text} of type: {entity.label_}')
         if entity.label_ == "PER" or entity.label_ == "LOC" or entity.label_ == "ORG":
-            print("Persona encontrada!!", entity.label_, entity.text)
+           # print("Persona encontrada!!", entity.label_, entity.text)
             lista.append(f'{entity.label_}:{entity.text}')
 
     return lista
